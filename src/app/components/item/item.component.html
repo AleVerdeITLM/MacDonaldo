@@ -1,0 +1,21 @@
+<mat-card class="CartadelMenu">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>{{comidaQueRecibo.Nombre}}</mat-card-title>
+      <mat-card-subtitle>{{comidaQueRecibo.Precio}}</mat-card-subtitle>
+    </mat-card-header>
+    <div class="imagen">
+      <img mat-card-image src="../../../assets/{{comidaQueRecibo.Foto}}" alt="Mac Tentate">
+    </div>
+    <mat-card-content>
+      <p>
+       {{comidaQueRecibo.Descripcion}}
+      </p>
+      <p>
+        Calorias: {{comidaQueRecibo.Calorias}}
+      </p>
+    </mat-card-content>
+    <mat-card-actions class="btnSumarCarrito">
+      <button mat-button><mat-icon>add_shopping_cart</mat-icon>Agregar al Carrito</button>
+    </mat-card-actions>
+  </mat-card>
